@@ -13,4 +13,10 @@ public class WebappAplicationController {
         return mv;
     }
 
+    @RequestMapping(value = "/cartes", method = RequestMethod.GET)
+    public ModelAndView cartes(){
+        ModelAndView mv = new ModelAndView("cartes");
+        return mv;
+    }
+
 }
