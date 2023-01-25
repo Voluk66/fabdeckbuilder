@@ -3,6 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <modules>
     <module>webapp</module>
+    <module>deck</module>
   </modules>
   <groupId>fr.voluk</groupId>
   <artifactId>FaBDeckBuilder</artifactId>
