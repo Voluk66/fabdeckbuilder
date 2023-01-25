@@ -1,68 +1,233 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <title>Flesh And Blood DeckBuilder</title>
-  <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 11]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="Free Datta Able Admin Template come up with latest Bootstrap 4 framework with basic components, form elements and lots of pre-made layout options" />
-  <meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template, free admin theme, free dashboard template"/>
-  <meta name="author" content="CodedThemes"/>
+  <head>
+    <title>Flesh And Blood DeckBuilder</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Favicon icon -->
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-  <!-- fontawesome icon -->
-  <link rel="stylesheet" href="/fonts/fontawesome/css/fontawesome-all.min.css">
-  <!-- animation css -->
-  <link rel="stylesheet" href="/plugins/animation/css/animate.min.css">
-  <!-- vendor css -->
-  <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon icon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="/fonts/fontawesome/css/fontawesome-all.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="/plugins/animation/css/animate.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="/css/style.css">
 
-</head>
+  </head>
 
-<body>
-<!-- [ Pre-loader ] start -->
-  <div class="loader-bg">
-    <div class="loader-track">
-      <div class="loader-fill"></div>
+  <body>
+  <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+      <div class="loader-track">
+        <div class="loader-fill"></div>
+      </div>
     </div>
-  </div>
-  <!-- [ Pre-loader ] End -->
-  <!-- [ navigation menu ] start -->
-  <div th:replace="~{fragments/header.html :: navbar}"></div>
-  <!-- [ navigation menu ] end -->
+    <!-- [ Pre-loader ] End -->
+    <!-- [ navigation menu ] start -->
+    <div th:replace="~{fragments/header.html :: navbar}"></div>
+    <!-- [ navigation menu ] end -->
 
-  <!-- [ Header ] start -->
-  <div th:replace="~{fragments/header.html :: header}"></div>
-  <!-- [ Header ] end -->
+    <!-- [ Header ] start -->
+    <div th:replace="~{fragments/header.html :: header}"></div>
+    <!-- [ Header ] end -->
 
-  <!-- [ Main Content ] start -->
-  <div class="pcoded-main-container">
-    <div class="pcoded-wrapper">
-      <div class="pcoded-content">
-        <div class="pcoded-inner-content">
-          <!-- [ breadcrumb ] start -->
-
-          <!-- [ breadcrumb ] end -->
-          <div class="main-body">
-            <div class="page-wrapper">
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+      <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+          <div class="pcoded-inner-content">
+            <!-- [ breadcrumb ] start -->
+            <div class="page-header">
+              <div class="page-block">
+                <div class="row align-items-center">
+                  <div class="col-md-12">
+                    <div class="page-header-title">
+                      <h5 class="m-b-10">Cartes</h5>
+                    </div>
+                    <ul class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="cartes">
+                          <i class="feather icon-home"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- [ breadcrumb ] end -->
+            <div class="main-body">
+              <div class="page-wrapper">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Non Classé</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="nonClasse"><img th:src="@{images/non_classe.png}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Générique</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="generic"><img th:src="@{images/generic.png}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Assassin</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="assassin"><img th:src="@{images/assassin.avif}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 >Brute</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="brute"><img th:src="@{images/brute.avif}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Gardien</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="gardien"><img th:src="@{images/gardien.avif}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Illusioniste</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="illusionist"><img th:src="@{images/illusionist.avif}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Méchanologue</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="mechanologist"><img th:src="@{images/ARC001.avif}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 >Marchant</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="merchant"><img th:src="@{images/merchant.png}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Ninja</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="ninja"><img th:src="@{images/ninja.avif}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Coureur</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="ranger"><img th:src="@{images/ranger.png}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Lame Rune</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="runeblade"><img th:src="@{images/runeblade.avif}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 >Shapeshifter</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="shapeshifter"><img th:src="@{images/shapeshifter.png}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Guerrier</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="warrior"><img th:src="@{images/warrior.avif}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Sorcier</h5>
+                      </div>
+                      <div class="card-body" style="text-align: center;">
+                        <a href="wizard"><img th:src="@{images/wizzard.avif}" style="width: 100%"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="/js/vendor-all.min.js"></script>
-  <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script src="/js/pcoded.min.js"></script>
-</body>
+
+    <script src="/js/vendor-all.min.js"></script>
+    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/pages/custompages/cartes.js"></script>
+    <script src="/js/pcoded.min.js"></script>
+
+  </body>
 
 </html>

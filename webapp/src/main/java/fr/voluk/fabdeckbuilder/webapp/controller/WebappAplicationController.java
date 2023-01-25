@@ -19,4 +19,10 @@ public class WebappAplicationController {
         return mv;
     }
 
+    @RequestMapping(value = "assassin", method = RequestMethod.GET)
+    public ModelAndView assassin(){
+        ModelAndView mv = new ModelAndView("assassin");
+        return mv;
+    }
+
 }
