@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guerrier</title>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Favicon icon -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <!-- fontawesome icon -->
+  <link rel="stylesheet" href="/fonts/fontawesome/css/fontawesome-all.min.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="/plugins/animation/css/animate.min.css">
+  <!-- vendor css -->
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+<!-- [ Pre-loader ] start -->
+<div class="loader-bg">
+  <div class="loader-track">
+    <div class="loader-fill"></div>
+  </div>
+</div>
+<!-- [ Pre-loader ] End -->
+<!-- [ navigation menu ] start -->
+<div th:replace="~{fragments/header.html :: navbar}"></div>
+<!-- [ navigation menu ] end -->
+
+<!-- [ Header ] start -->
+<div th:replace="~{fragments/header.html :: header}"></div>
+<!-- [ Header ] end -->
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+  <div class="pcoded-wrapper">
+    <div class="pcoded-content">
+      <div class="pcoded-inner-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+          <div class="page-block">
+            <div class="row align-items-center">
+              <div class="col-md-12">
+                <div class="page-header-title">
+                  <h5 class="m-b-10">Classe Guerrier</h5>
+                </div>
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="cartes">
+                      <i class="feather icon-home"></i>
+                    </a>
+                  </li>
+                  <li class="breadcrumb-item active">Guerrier</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <div class="main-body">
+          <div class="page-wrapper">
+            <div class="row justify-content-center">
+              <ul class="pagination" id="pagination">
+                <li class="page-item"><a class="page-link" id="previous">Previous</a></li>
+                <li id="ap1" class="page-item active"><a class="page-link" id="apl1">1</a></li>
+                <li id="ap2"></li>
+                <li id="ap3"></li>
+                <li id="ap4"></li>
+                <li id="ap5"></li>
+                <li id="ap6"></li>
+                <li id="ap7"></li>
+                <li id="ap8"></li>
+                <li id="ap9"></li>
+                <li id="ap10"></li>
+                <li id="ap11"></li>
+                <li id="ap12"></li>
+                <li class="page-item"><a class="page-link" id="next">Next</a></li>
+
+              </ul>
+            </div>
+            <div class="row" hidden=false id="r1">
+            </div>
+            <div class="row" hidden="true" id="r2">
+            </div>
+            <div class="row"  hidden="true" id="r3">
+            </div>
+            <div class="row" hidden="true" id="r4">
+            </div>
+            <div class="row" hidden="true" id="r5">
+            </div>
+            <div class="row" hidden="true" id="r6">
+            </div>
+            <div class="row" hidden="true" id="r7">
+            </div>
+            <div class="row" hidden="true" id="r8">
+            </div>
+            <div class="row" hidden="true" id="r9">
+            </div>
+            <div class="row" hidden="true" id="r10">
+            </div>
+            <div class="row" hidden="true" id="r11">
+            </div>
+            <div class="row" hidden="true" id="r12">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/vendor-all.min.js"></script>
+<script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/pages/custompages/warrior.js"></script>
+<script src="/js/pcoded.min.js"></script>
+
+</body>
+</html>

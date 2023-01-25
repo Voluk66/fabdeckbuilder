@@ -3,7 +3,6 @@
   <modelVersion>4.0.0</modelVersion>
   <modules>
     <module>webapp</module>
-    <module>cartes</module>
   </modules>
   <groupId>fr.voluk</groupId>
   <artifactId>FaBDeckBuilder</artifactId>
